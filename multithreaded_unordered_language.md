@@ -48,8 +48,8 @@ concurrency is monothreaded and managed by a virtual machine which makes accesse
 safe. In that kind of context, a developper can built a very complex systems of states machines
 with a large scale of jobs.
 
-[Comparative Study of Refactoring Haskell and Erlang Programs](https://www.researchgate.net/publication/220703707_Comparative_Study_of_Refactoring_Haskell_and_Erlang_Programs)
-[Kyle Simpson- You Don't Know JS, Async and Performance](https://drive.google.com/file/d/1q-FkIvx6oBEcZ-pli_jkFFPr6B7d7VBA/view)
+> - [Comparative Study of Refactoring Haskell and Erlang Programs](https://www.researchgate.net/publication/220703707_Comparative_Study_of_Refactoring_Haskell_and_Erlang_Programs)
+> - [Kyle Simpson- You Don't Know JS, Async and Performance](https://drive.google.com/file/d/1q-FkIvx6oBEcZ-pli_jkFFPr6B7d7VBA/view)
 
 There is a growing need for programming paradigms to have one that inherently implement
 concurrency and adaptable modeling. Rust and C++ both provides library that are limited
@@ -58,8 +58,8 @@ harder it became to change how it works. Many projects suffer of big refactoring
 of the dependance of a library. Rust proposal of defining async/await behaviour is not
 enough and is today controversal.
 
-[The Rust I wanted had no future](https://news.ycombinator.com/item?id=36193326)
-[Experimental async / await support for Tokio](https://tokio.rs/blog/2018-08-async-await)
+> - [The Rust I wanted had no future](https://news.ycombinator.com/item?id=36193326)
+> - [Experimental async / await support for Tokio](https://tokio.rs/blog/2018-08-async-await)
 
 While multithreading programming is becomming a wildly used approach to design a system, due
 to the observed performance and the global ideology spreed by developper's influencers. There
@@ -69,10 +69,10 @@ promises implementation shown to be quite difficult, and category theory demonst
 controversial way which finally is considered better than before. Tokio crate faced at
 stuttering and big latency issues, which were patched but still very rigid.
 
-[CLR thread pool injection, stuttering problems](https://joeduffyblog.com/2006/07/08/clr-thread-pool-injection-stuttering-problems/)
-[Jon Gjengset - Decrusting the tokio crate](https://www.youtube.com/watch?v=o2ob8zkeq2s)
-[Category Theory Promise/A+](https://brianmckenna.org/blog/category_theory_promisesaplus)
-[Reducing tail latencies with automatic cooperative task yielding](https://tokio.rs/blog/2020-04-preemption)
+> - [CLR thread pool injection, stuttering problems](https://joeduffyblog.com/2006/07/08/clr-thread-pool-injection-stuttering-problems/)
+> - [Jon Gjengset - Decrusting the tokio crate](https://www.youtube.com/watch?v=o2ob8zkeq2s)
+> - [Category Theory Promise/A+](https://brianmckenna.org/blog/category_theory_promisesaplus)
+> - [Reducing tail latencies with automatic cooperative task yielding](https://tokio.rs/blog/2020-04-preemption)
 
 This research aims to design a new language with a complete toolchain (static analyser, interpreter
 and transpiler into C89) where every expression are fundamentally unordered jobs, written like if it were
@@ -87,11 +87,10 @@ The language should be able to recognize pure and impure function to minimize th
 in the code analysis, the toolchain must recognize static, immutable and mutable variables to mitigate
 the access overhead to the memory shared between threads.
 
-[Implementation Strategies for Mutable Value Semantics](https://www.jot.fm/issues/issue_2022_02/article2.pdf)
-[Pure vs Impure functions](https://dev.to/sanspanic/pure-vs-impure-functions-50aj)
-[Simple, Fast, and Practical Non-Blocking and Blocking
-Concurrent Queue Algorithms](https://www.cs.rochester.edu/~scott/papers/1996_PODC_queues.pdf)
-[Rayon data parallelism](https://smallcultfollowing.com/babysteps/blog/2015/12/18/rayon-data-parallelism-in-rust/)
+> - [Implementation Strategies for Mutable Value Semantics](https://www.jot.fm/issues/issue_2022_02/article2.pdf)
+> - [Pure vs Impure functions](https://dev.to/sanspanic/pure-vs-impure-functions-50aj)
+> - [Simple, Fast, and Practical Non-Blocking and Blocking Concurrent Queue Algorithms](https://www.cs.rochester.edu/~scott/papers/1996_PODC_queues.pdf)
+> - [Rayon data parallelism](https://smallcultfollowing.com/babysteps/blog/2015/12/18/rayon-data-parallelism-in-rust/)
 
 2. What mechanisms can allow the runtime system to reorder expression evaluation
 based on the execution context?
@@ -101,7 +100,7 @@ has to dynamically reorder expression evaluation. The development of a program m
 that a job has a higher/less priority than another. Most of the needs here have to be defined after studying
 the state of art in queueing theory.
 
-[Making the Tokio scheduler 10x faster](https://tokio.rs/blog/2019-10-scheduler)
+> - [Making the Tokio scheduler 10x faster](https://tokio.rs/blog/2019-10-scheduler)
 
 3. How can the language's runtime serve as a realistic environment for modeling
 and testing queueing systems?
@@ -114,10 +113,8 @@ of the global behavior of the system. Finally, insights about program's performa
 to get when a project scale and inherent functionalities are big requirements in real-world applications
 and in study cases.
 
-[A Product-form Network for Systems with Job Stealing
-Policies](https://dl.acm.org/doi/10.1145/3643845)
-[The Gittins Policy is Nearly Optimal in the M/G/k under
-Extremely General Conditions](https://www.cs.cmu.edu/~harchol/Papers/Sigmetrics21a.pdf)
+> - [A Product-form Network for Systems with Job Stealing Policies](https://dl.acm.org/doi/10.1145/3643845)
+> - [The Gittins Policy is Nearly Optimal in the M/G/k under Extremely General Conditions](https://www.cs.cmu.edu/~harchol/Papers/Sigmetrics21a.pdf)
 
 # Objectives
 
@@ -127,15 +124,14 @@ The goals are:
 libraries as network communication, input and outputs, parsing, etc. Directly binded with
 libc.
 
-[First attempt of the prototype](https://github.com/adrien-zinger/eniem-langage)
-
 2. Develop benchmark's programs with the designed language and other traditional
    approach (C, C++, Haskell, Rust)
 
 3. After an evaluation of the addptability/flexibility of the language.
    Apply different models of queueing theory, analyse and compare scenarios.
 
-[No-op compiler benchmarking](https://scot.tg/2025/01/07/no-op-compiler-benchmarking/)
+> - [First attempt of the prototype](https://github.com/adrien-zinger/eniem-langage)
+> - [No-op compiler benchmarking](https://scot.tg/2025/01/07/no-op-compiler-benchmarking/)
 
 # Methodology
 
