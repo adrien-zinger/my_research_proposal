@@ -155,11 +155,12 @@ libc.
 
 # Timeline
 
-Phases                        | Duration (Months)
-Literature Review & Design    | 0–6
-Prototype Development         | 7–18
-Experimental Design & Testing | 19–30
-Analysis                      | 31–36
-Dissertation Writing          | 37–42
-Defense Preparation           | 43–48
+| Phases                        | Duration (Months) |
+|-------------------------------|-------------------|
+| Literature Review & Design    | 0–6               |
+| Prototype Development         | 7–18              |
+| Experimental Design & Testing | 19–30             |
+| Analysis                      | 31–36             |
+| Dissertation Writing          | 37–42             |
+| Defense Preparation           | 43–48             |
 
