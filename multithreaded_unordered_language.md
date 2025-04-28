@@ -1,12 +1,22 @@
 # Title
 
-Design and realisation of a multithreaded unordered expression language for adaptive execution and queueing theory applications.
+Design and realisation of a multithreaded unordered expression language for
+adaptive execution and queueing theory applications.
 
 # Abstract
 
-This research proposes the development of a new programming language primarly based on a runtime with an multithreaded approach to execute expressions. The expressions are fundamentally unordered and the language has a feature of lazy evaluation like in haskell. By enabling runtime adaptition of execution, this language aims t create a flexible and efficient computational envirronment. Furthermore, the dynamic expression ordering naturally forms a plateform for experimental studies in queueing theory, providing opportunities to model and analyze complex systems. This work will contribute both to programming language theory and to the modeling and simulation of queueing networks.
+The mainline of this research is the design and development of a
+programming language with a inherent concurrent paradigm. That language will be
+primarly based on a runtime with a multithreaded approach, the program generate
+for each expression one or several jobs that are fundamentally unorderedly
+evaluated. That new language aims to be flexible, easy to learn, and contains
+powerfull features, providing opportunities to model and analyse complex
+systems. That multithreaded paradigm enable runtime adaptation of execution, job
+class specifications, that can be used both in a real-world environment for
+backend developments requiring parrallelism, and in a study environment to
+experiment some networks in queueing theory.
 
-# Introductio
+# Introduction
 
 Traditional programming languages enforce a strict ordering of computations.
 Some compilers can change the order of some operations, as well, processors with
@@ -103,4 +113,12 @@ Modern runtime schedulers will be examined for insights and comparaisons.
 
 
 # Timeline
+
+Phase                        | Duration (Months)
+Literature Review & Design    | 0–6
+Prototype Development         | 7–18
+Experimental Design & Testing | 19–30
+Analysis & Refinement         | 31–36
+Dissertation Writing          | 37–42
+defense Preparation           | 43–48 An abstract evaluation propose to checks types
 
