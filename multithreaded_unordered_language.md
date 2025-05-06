@@ -1,7 +1,7 @@
 # Title
 
-An inherently concurrent and multi threaded language with adaptive ordonancements
-with queueing theories applications.
+An inherently concurrent and multi-threaded language with adaptive scheduling runtime
+and queueing theories applications.
 
 # Abstract
 
@@ -27,13 +27,20 @@ That new language aims to be flexible, easy to learn, and contains
 powerful features, providing opportunities to model and analyze complex
 systems. That multi-threaded paradigm enable runtime adaptation of execution, job
 class specifications, that can be used both in a real-world environment for
-backend developments requiring parallelism, and in a study environment to
+any developments requiring parallelism/concurrency, and in a study environment to
 experiment some networks in queueing theory.
 
 With that innovating paradigm, Eniem could enable runtime adaptation of the execution.
 It includes job (expression) class specifications, dynamic reclassification. In addition,
 Eniem toolchain provides a powerful type checking and security features thanks to
 an abstract interpreter that can be enabled which makes the code safe and correct.
+
+# Project on GitHub Right Now
+
+A [first attempt of the prototype](https://github.com/adrien-zinger/eniem-langage) is already
+in development and accessible to public. The GitHub project presentation (README, contributing,
+documentation) are missing at this time. But some example of code demonstrate a first idea of
+the syntax of the language.
 
 # Pre introduction
 
@@ -164,7 +171,6 @@ libc.
 3. After an evaluation of the adaptability/flexibility of the language.
    Apply different models of queueing theory, analyse and compare scenarios.
 
-> - [First attempt of the prototype](https://github.com/adrien-zinger/eniem-langage)
 > - [No-op compiler benchmarking](https://scot.tg/2025/01/07/no-op-compiler-benchmarking/)
 
 # Methodology
@@ -186,6 +192,7 @@ libc.
 - Implementation of benchmarks of queueing networks with job stealing (multiple jobs queues),
   single queue with/out jobs reordering.
 - Insights to the interplay between program evaluation order and system performance.
+
 
 # Timeline
 
